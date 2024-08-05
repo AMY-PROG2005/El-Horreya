@@ -25,3 +25,28 @@ showSlide(currentSlide);
 
 // Auto slide
 setInterval(nextSlide, slideInterval);
+
+//animation
+// script.js
+document.addEventListener('DOMContentLoaded', function() {
+    const sections = document.querySelectorAll('.category');
+
+    const observerOptions = {
+        root: null, // viewport
+        rootMargin: '0px',
+        threshold: 0.2 // 20% of the section needs to be visible
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target); // Stop observing once animated
+            }
+        });
+    }, observerOptions);
+
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+});
