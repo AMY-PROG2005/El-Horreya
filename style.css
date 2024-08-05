@@ -186,6 +186,7 @@ nav .countainer {
     position: relative;
     align-content: center;
 }
+
 .categories-header::before {
     content: "";
     position: absolute;
@@ -196,7 +197,8 @@ nav .countainer {
     background-image: url('img/cfe2f84da4ddafb2a19e9e4c5f2f738a.jfif');
     background-size: cover;
     background-position: center;
-    opacity: 0.4; /* Adjust this value for desired opacity */
+    opacity: 0.4;
+    /* Adjust this value for desired opacity */
 }
 
 /* Section Title */
@@ -285,4 +287,56 @@ nav .countainer {
     .category {
         margin-bottom: 40px;
     }
+}
+
+.company-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 182px;
+    gap: 68px;
+    margin: 70px;
+}
+
+.company {
+    margin: 0 30px;
+    text-align: center;
+    transition: 0.3s ease;
+    cursor: pointer;
+    opacity: .6;
+}
+
+.company-header {
+    position: relative;
+    
+}
+
+.company-header h1 {
+    color: var(--primary);
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.company-header::before {
+    content: '';
+    position: absolute;
+    width: 89px;
+    height: 4px;
+    bottom: -13%;
+    right: 43%;
+    background-color: #696969;
+    transition: .3s ;
+}
+.company-header:hover.company-header::before{
+    right: 52%;
+}
+.company-icon img {
+    max-width: 240px;
+    max-height: 180px;
+}
+
+.company:hover {
+    opacity: 1;
+    transform: translateY(-10px);
 }
