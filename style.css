@@ -172,6 +172,65 @@ nav .countainer {
   justify-content: center;
   align-items: center;
 }
+.about{
+  width: 100%;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  padding: 150px 0;
+  background-color: var(--second-color);
+}
+
+
+
+
+.card{
+  align-content: center;
+}
+.card img{
+  width: 612px;
+  height: 675px;
+}
+.about-main {
+  width: 1380px;
+  display: flex;
+  
+  justify-content: space-around;
+  gap: 43px;
+}
+.about-text{
+  background-size: contain;
+  position: relative;
+  background-image: url('img/Group\ 5.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.main-text{
+  margin-top: 41px;
+  width: 612px;
+  display: flex;
+    flex-direction: column;
+    gap: 11px;
+
+}
+.about-text h3 {
+  color: var(--primary);
+  font-size: 20px;
+}
+.about-text h1 {
+  font-weight: 700;
+  font-size: 36px;
+  color: var(--main-color);
+}
+.about-text p {
+  color: #434343;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 500;
+}
+/* Frame 3755 */
+
+/* Auto layout */
 
 .categories-section {
   background-color: #fff;
@@ -194,7 +253,7 @@ nav .countainer {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url("img/cfe2f84da4ddafb2a19e9e4c5f2f738a.jfif");
+  background-image: url("img/cfe2f84da4ddafb2a19e9e4c5f2f738a.png");
   background-size: cover;
   background-position: center;
   opacity: 0.4;
@@ -230,7 +289,8 @@ nav .countainer {
   transition: transform 0.3s ease;
   cursor: pointer;
   opacity: 0;
-  transition: 6s ease-out both;
+  transition: .6s ease-out both;
+  transition: transform .3s ease;
 }
 .visible {
     -webkit-animation-name: fadeIn;
@@ -306,6 +366,28 @@ nav .countainer {
   }
 }
 
+.ourview-text h1{
+  font-size: 36px;
+  font-weight: 700;
+}
+.ourview-text ul{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.ourview-text li{
+  display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.ourview-text li img{
+  width: 24px;
+  height: 24px;
+}
+.ourview-text li p{
+  font-size: 20px;
+  font-weight: 500;
+}
 .company-container {
   display: flex;
   flex-direction: row;
