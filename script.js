@@ -27,7 +27,6 @@ showSlide(currentSlide);
 setInterval(nextSlide, slideInterval);
 
 //animation
-// script.js
 document.addEventListener('DOMContentLoaded', function() {
     const sections = document.querySelectorAll('.category');
 
